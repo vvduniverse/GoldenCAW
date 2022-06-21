@@ -12,6 +12,8 @@
 		8424DA412861DA9F00966B13 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8424DA402861DA9F00966B13 /* Preview Assets.xcassets */; };
 		8424DA642861DE4900966B13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8424DA632861DE4900966B13 /* Assets.xcassets */; };
 		8424DA672861E07700966B13 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424DA662861E07700966B13 /* Color.swift */; };
+		8424DA6D2861E87200966B13 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424DA6C2861E87200966B13 /* HomeView.swift */; };
+		8424DA712861EB8F00966B13 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424DA702861EB8F00966B13 /* CircleButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		8424DA402861DA9F00966B13 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8424DA632861DE4900966B13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8424DA662861E07700966B13 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		8424DA6C2861E87200966B13 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8424DA702861EB8F00966B13 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				8424DA652861E05A00966B13 /* Extensions */,
+				8424DA682861E81200966B13 /* Core */,
 				8424DA392861DA9D00966B13 /* GoldenCAWApp.swift */,
 				8424DA3B2861DA9D00966B13 /* ContentView.swift */,
 				8424DA632861DE4900966B13 /* Assets.xcassets */,
@@ -76,6 +81,55 @@
 				8424DA662861E07700966B13 /* Color.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8424DA682861E81200966B13 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8424DA6E2861EB5600966B13 /* Components */,
+				8424DA692861E83700966B13 /* Home */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8424DA692861E83700966B13 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8424DA6B2861E85000966B13 /* ViewModel */,
+				8424DA6A2861E84100966B13 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8424DA6A2861E84100966B13 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8424DA6B2861E85000966B13 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8424DA6C2861E87200966B13 /* HomeView.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8424DA6E2861EB5600966B13 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8424DA6F2861EB7000966B13 /* CircleButton */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		8424DA6F2861EB7000966B13 /* CircleButton */ = {
+			isa = PBXGroup;
+			children = (
+				8424DA702861EB8F00966B13 /* CircleButtonView.swift */,
+			);
+			path = CircleButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +203,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8424DA3C2861DA9D00966B13 /* ContentView.swift in Sources */,
+				8424DA6D2861E87200966B13 /* HomeView.swift in Sources */,
 				8424DA3A2861DA9D00966B13 /* GoldenCAWApp.swift in Sources */,
+				8424DA712861EB8F00966B13 /* CircleButtonView.swift in Sources */,
 				8424DA672861E07700966B13 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
